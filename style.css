@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background-image: linear-gradient(to right, rgb(252, 179, 23), rgb(248, 195, 79));
 }
 
 .container {
@@ -11,16 +12,50 @@ html, body {
 
 .title {
   font-size: 50px;
+  font-family: Kanit;
+  font-weight: 500;
+}
+
+.title span {
+  color: rgb(170, 115, 13);
+}
+
+.gw {
+  margin-top: 30px;
+}
+
+.gw p {
+  margin: 0;
+  font-family: Kanit;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.gw button {
+  margin-top: 10px;
 }
 
 .buttons {
   margin-top: 50px;
 }
 
-
 button {
   padding: 20px;
   margin-right: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: rgb(10, 180, 61);
+  color: white;
+  transition: all 0.07s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: grey;
 }
 
 .scores {
@@ -29,6 +64,15 @@ button {
   gap: 50px;
 }
 
-.score {
-  text-align: center;
+.scores p, .choices p {
+  color: black;
+  font-size: 20px;
+  font-family: Kanit;
+  font-weight: 300;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
